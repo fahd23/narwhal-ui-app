@@ -1,0 +1,21 @@
+.navbar {
+  position: absolute;
+  background: var(--primary-color);
+  padding: 1.5rem;
+  box-shadow: 0px 1px 0px #e2e2e2, 0px 0px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+.app-names {
+  padding-left: 5rem;
+}
+.heading {
+  font-size: 1.12rem;
+  text-transform: uppercase;
+  color: #1a1919;
+  opacity: 0.5;
+}
+
