@@ -46,7 +46,7 @@ const Navbar = () => {
           </g>
         </svg>
         <p className="flex-align-c gap-1">
-          <span>Hello John</span> <img className="cursor" src="../Assets/john.png" />
+          <span>Hello John</span> <img className="cursor" src="../Assets/john.png" alt="profile-img"/>
         </p>
       </div>
     </div>
