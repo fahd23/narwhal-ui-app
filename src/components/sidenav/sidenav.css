@@ -1,37 +1,39 @@
 .sidenav {
-  position: absolute;
+  position: fixed;
   background: var(--secondary-color);
   height: 100%;
   width: 5rem;
   z-index: 2;
   box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5),
     inset -4px 0px 4px rgba(2, 15, 24, 0.569466);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* logo */
-.logo {
-  position: absolute;
-  top: 0.65rem;
+.logo{
+  margin: 1.7rem 0 1.5rem;
 }
-.menu-campaigns {
-  position: absolute;
-  left: 1.65rem;
-  top: 7.5rem;
-}
-.menu-teams {
-  position: absolute;
-  top: 11.3rem;
-}
-.menu-contacts {
-  position: absolute;
-  top: 17rem;
-}
-.menu-reports{
-  position: absolute;
-  left: 1.43rem;
-  top: 23.5rem;
+.menu-campaigns,
+.menu-teams,
+.menu-contacts,
+.menu-reports {
+  margin: 1.5rem 0;
+  opacity: 0.3;
 }
 .menu-help {
   position: absolute;
   left: 1.68rem;
-  bottom: 2.17%;
+  bottom: 1.3rem;
+  opacity: 0.3;
+}
+.active {
+  background: var(--accent-color);
+  opacity: 1;
+  margin:1.5px 0;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
