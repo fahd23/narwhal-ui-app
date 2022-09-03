@@ -1,0 +1,47 @@
+.header {
+  background: var(--primary-color);
+  padding: 6.5rem 2rem 0;
+}
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 5rem;
+}
+.title-name {
+  font-size: 1.85rem;
+  font-weight: 600;
+}
+.header-btn {
+  text-transform: uppercase;
+  background-color: #40d2bf;
+  border: transparent;
+  padding: 6px 10px;
+  border-radius: 4px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.tab {
+  padding: 10px;
+}
+.tabs a {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+.search {
+  margin-right: 2rem;
+}
+.search-input {
+  color: #999999;
+  padding: 10px 14px;
+  background-color: #f9f9f9;
+  outline: 1px transparent;
+  border: transparent;
+  border-radius: 4px;
+}
+.active-tab {
+  border-bottom: 3px solid var(--accent-color);
+}
+.active-tab-link {
+  color: var(--accent-color);
+}
