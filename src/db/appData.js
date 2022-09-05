@@ -147,6 +147,7 @@ export const appData = {
       },
       action: "archived_team",
       target: "Uber",
+      created_at: "3 hours ago",
     },
     {
       id: 4,

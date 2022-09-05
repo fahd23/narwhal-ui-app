@@ -24,6 +24,9 @@ html {
 .font-size-2 {
   font-size: 2rem;
 }
+.font-weight-600 {
+  font-weight: 600;
+}
 .flex-jc-btwn {
   display: flex;
   justify-content: space-between;
@@ -83,4 +86,8 @@ a {
 hr {
   border: none;
   border-bottom: #e2e2e2 1px solid;
+}
+.content-body-section {
+  margin-left: 7rem;
+  display: flex;
 }
