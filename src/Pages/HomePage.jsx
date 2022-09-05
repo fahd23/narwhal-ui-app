@@ -1,10 +1,10 @@
-import Navbar from "./navbar/Navbar";
-import Header from "./header/Header";
-import Sidenav from "./sidenav/Sidenav";
-import Content from "./content/Content";
-
 import React from "react";
-import ActivityFeed from "./activityfeed/ActivityFeed";
+
+import Navbar from "components/navbar/Navbar";
+import Header from "components/header/Header";
+import Sidenav from "components/sidenav/Sidenav";
+import Content from "components/content/Content";
+import ActivityFeed from "components/activityfeed/ActivityFeed";
 
 const HomePage = () => {
   return (

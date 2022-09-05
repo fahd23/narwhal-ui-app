@@ -1,10 +1,13 @@
 import "./App.css";
-import HomePage from "components/HomePage";
+import HomePage from "Pages/HomePage";
+import { ContentTeamsProvider } from "context/ContentContext";
 
 function App() {
   return (
     <div className="App">
-      <HomePage />
+      <ContentTeamsProvider>
+        <HomePage />
+      </ContentTeamsProvider>
     </div>
   );
 }

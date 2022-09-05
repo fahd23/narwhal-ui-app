@@ -55,7 +55,7 @@ const TeamCard = ({ data }) => {
       <div className="team-card-desc padding-10">{description}</div>
       <hr />
       <div className="flex-jc-btwn flex-align-c gap-2 padding-10">
-        <p className="flex-align-c">
+        <div className="flex-align-c">
           <svg
             width="16"
             height="15"
@@ -72,8 +72,8 @@ const TeamCard = ({ data }) => {
             />
           </svg>
           <p className="desc padding-left-10">{campaigns_count} campaigns</p>
-        </p>
-        <p className="flex-align-c">
+        </div>
+        <div className="flex-align-c">
           <svg
             width="16"
             height="14"
@@ -90,7 +90,7 @@ const TeamCard = ({ data }) => {
             />
           </svg>
           <p className="desc padding-left-10">{leads_count} Leads</p>
-        </p>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,12 @@
+import { useContentTeams } from "context/ContentContext";
 import React from "react";
 import "./header.css";
+import { appData } from "db/appData";
 
 const Header = () => {
+  const teams = appData.teams;
+  const { state, dispatch } = useContentTeams();
+
   return (
     <header className="header">
       <div className="flex-jc-btwn flex-align-c">
@@ -29,16 +34,35 @@ const Header = () => {
       </div>
       <div className="padding-left-6 margin-top-2 flex-jc-btwn flex-wrap">
         <div className="tabs gap-1 flex-align-c gap-3">
-          <div class="tab active-tab padding-bottom-_5">
-            <a className="active-tab-link" href="./">
+          <div
+            className={`tab padding-bottom-_5 ${
+              !state.teams.every((item) => item.is_archived) &&
+              !state.teams.every((item) => item.is_favorited) &&
+              "active-tab"
+            }`}
+            onClick={() => dispatch({ type: "ALL_TEAMS", payload: teams })}
+          >
+            <a className="active-tab-link" href="#">
               All
             </a>
           </div>
-          <div className="tab padding-bottom-_5">
-            <a href="./">Favorites</a>
+          <div
+            className={`tab padding-bottom-_5 ${
+              state.teams.every((item) => item.is_favorited) && "active-tab"
+            }`}
+            onClick={() =>
+              dispatch({ type: "FAVORITES_TEAMS", payload: teams })
+            }
+          >
+            <a href="#">Favorites</a>
           </div>
-          <div className="tab padding-bottom-_5">
-            <a href="./">Archived</a>
+          <div
+            className={`tab padding-bottom-_5 ${
+              state.teams.every((item) => item.is_archived) && "active-tab"
+            }`}
+            onClick={() => dispatch({ type: "ARCHIVED_TEAMS", payload: teams })}
+          >
+            <a href="#">Archived</a>
           </div>
         </div>
         <div className="search">
