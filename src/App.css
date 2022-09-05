@@ -32,6 +32,9 @@ html {
   display: flex;
   align-items: center;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .gap-1 {
   gap: 1rem;
 }
@@ -47,16 +50,28 @@ html {
 .margin-top-2 {
   margin-top: 2rem;
 }
+.margin-left-6 {
+  margin-left: 6rem;
+}
+.margin-left-auto {
+  margin-left: auto;
+}
+.padding-10 {
+  padding: 10px;
+}
+.padding-left-10 {
+  padding-left: 10px;
+}
 .padding-left-5 {
   padding-left: 5rem;
 }
 .padding-left-6 {
   padding-left: 6rem;
 }
-.padding-bottom-_5{
+.padding-bottom-_5 {
   padding-bottom: 0.5rem;
 }
-.padding-bottom-1{
+.padding-bottom-1 {
   padding-bottom: 1rem;
 }
 .App {
@@ -64,4 +79,8 @@ html {
 }
 a {
   text-decoration: none;
+}
+hr {
+  border: none;
+  border-bottom: #e2e2e2 1px solid;
 }
