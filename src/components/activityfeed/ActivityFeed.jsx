@@ -9,8 +9,8 @@ const ActivityFeed = () => {
       <h4 className="activity-title ">Activity</h4>
       <hr />
       <div className="activity-body">
-        {appData.activities.map((item) => (
-          <MateItem data={item} />
+        {appData.activities.map((item, index) => (
+          <MateItem data={item} key={index} />
         ))}
       </div>
     </div>

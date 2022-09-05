@@ -1,9 +1,10 @@
-import TeamCard from "components/team-card/TeamCard";
 import React from "react";
-import { appData } from "db/appData";
+import TeamCard from "components/team-card/TeamCard";
+import { useContentTeams } from "context/ContentContext";
 import "./content.css";
 
 const Content = () => {
+  const { state } = useContentTeams();
   return (
     <div className="content-section">
       <div className="content-header flex-jc-btwn">
@@ -11,8 +12,8 @@ const Content = () => {
         <p className="header-para"> Showing 65 out of 65 teams </p>
       </div>
       <div className="card-container">
-        {appData.teams.map((item) => (
-          <TeamCard data={item} />
+        {state.teams.map((item, index) => (
+          <TeamCard data={item} key={index} />
         ))}
       </div>
     </div>
