@@ -1,6 +1,7 @@
 .content-section {
-  margin: 2.1rem 1.6rem 1.5rem 7rem;
+  margin: 2.1rem 1.6rem 1.5rem 0;
   background-color: var(--primary-color);
+  width: 1008px;
 }
 .content-header {
   padding: 1.5rem;
@@ -17,7 +18,7 @@
 /* Team card container */
 .card-container {
   display: flex;
-  gap: 10px;
+  gap: 1px;
   padding: 10px;
   flex-wrap: wrap;
 }
