@@ -23,11 +23,12 @@
 }
 .tab {
   padding: 10px;
-}
-.tabs a {
   color: var(--secondary-color);
   font-weight: 600;
+  cursor: pointer;
+  padding-bottom: 0.5rem;
 }
+
 .search {
   margin-right: 2rem;
 }
